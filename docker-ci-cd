@@ -8,6 +8,7 @@ node{
 	sh 'mvn clean package'
 	sh 'mv target/myweb*.war target/myweb.war'
  }
+
  
  stage('Build Docker Imager'){
    sh 'docker build -t kammana/myweb:0.0.1 .'
